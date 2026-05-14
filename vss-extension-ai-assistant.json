@@ -1,0 +1,51 @@
+{
+  "manifestVersion": 1,
+  "id": "nublado-ai-assistant-workitem",
+  "version": "0.1.54",
+  "name": "AI Assistant",
+  "description": "Work Item embedded AI Assistant for conversation-driven backlog drafting",
+  "publisher": "<publisher>",
+  "categories": [
+    "Azure Boards"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "icons": {
+    "default": "images/logo.png"
+  },
+  "contributions": [
+    {
+      "id": "nublado-ai-assistant-workitem-tab",
+      "type": "ms.vss-work-web.work-item-form-page",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+      "properties": {
+        "name": "AI Assistant",
+        "uri": "dist/index.html?surface=workitem",
+        "order": 120,
+        "icon": "tomaszpawlak.nublado-ai-assistant-workitem/images/left-nav-logo.png"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "images/logo.png",
+      "addressable": true
+    },
+    {
+      "path": "images/left-nav-logo.png",
+      "addressable": true
+    }
+  ],
+  "scopes": [
+    "vso.work"
+  ]
+}

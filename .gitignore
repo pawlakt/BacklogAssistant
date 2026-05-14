@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+*.vsix
+npm-debug.log*
+.env
+.env.local
+backend/llm-proxy-function/local.settings.json
+.vscode/

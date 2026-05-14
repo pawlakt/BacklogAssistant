@@ -1,0 +1,34 @@
+{
+  "baseUrl": "http://localhost:7071",
+  "routeParams": {
+    "workItemId": 12345
+  },
+  "headers": {
+    "Content-Type": "application/json",
+    "x-ado-user-id": "local-debug-user",
+    "x-ado-project-id": "Nublado",
+    "x-ado-user-name": "Local Debugger",
+    "x-ado-work-item-type": "Feature"
+  },
+  "requests": [
+    {
+      "name": "sendMessage",
+      "method": "POST",
+      "path": "/api/workitem-assistant/items/{workItemId}/messages",
+      "body": {
+        "message": "Split this feature into PBIs with clear acceptance criteria and implementation details."
+      }
+    },
+    {
+      "name": "prepareDraft",
+      "method": "POST",
+      "path": "/api/workitem-assistant/items/8085/draft",
+      "body": {}
+    },
+    {
+      "name": "getDraft",
+      "method": "GET",
+      "path": "/api/workitem-assistant/items/{workItemId}/draft"
+    }
+  ]
+}

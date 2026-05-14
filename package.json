@@ -1,0 +1,26 @@
+{
+  "name": "nublado-ado-extension",
+  "version": "0.1.54",
+  "private": true,
+  "description": "Azure DevOps Work Item AI Assistant extension",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "package:vsix:assistant": "tfx extension create --manifest-globs vss-extension-ai-assistant.json",
+    "bump:assistant": "node scripts/bump-assistant-version.js",
+    "release:assistant": "npm run bump:assistant && npm run build && npm run package:vsix:assistant"
+  },
+  "dependencies": {
+    "azure-devops-extension-api": "^4.252.0",
+    "azure-devops-extension-sdk": "^4.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "tfx-cli": "^0.21.1",
+    "vite": "^5.4.11"
+  }
+}
