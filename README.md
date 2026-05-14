@@ -133,12 +133,3 @@ npm run release:assistant
 ```
 
 This bumps version, builds `dist/`, and creates a new VSIX in one command.
-
-## Troubleshooting
-
-- `Missing required configuration: ...`  
-  A backend app setting is missing.
-- `No 'Access-Control-Allow-Origin' header...`  
-  Update `CORS_ALLOWED_ORIGINS` on the Function App.
-- `Work item context is missing` in local dev  
-  Set `VITE_WORK_ITEM_ID` and `VITE_WORK_ITEM_TYPE`.
