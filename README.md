@@ -136,4 +136,4 @@ This bumps version, builds `dist/`, and creates a new VSIX in one command.
 
 ## Demo (Polish language)
 
-[Click to play▶️!](./demo/demo-small.mp4)
+[Click to download▶️](./demo/demo-small.mp4)
