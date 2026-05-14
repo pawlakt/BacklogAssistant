@@ -133,3 +133,7 @@ npm run release:assistant
 ```
 
 This bumps version, builds `dist/`, and creates a new VSIX in one command.
+
+## Demo (Polish language)
+
+[Click to play▶️!](./demo/demo.mp4)
